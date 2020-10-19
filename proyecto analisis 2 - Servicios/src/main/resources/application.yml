@@ -1,0 +1,18 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:postgresql://postgresql-14036-0.cloudclusters.net:14080/ventascatalogo
+    username: admin
+    password: Umg123456
+
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    naming:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
